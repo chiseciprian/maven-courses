@@ -52,7 +52,6 @@ public class CountryWritter {
                 "<td>"+country.getLanguages().get(0).getName()+"</td>" +
                 "</tr>"
                 );
-        fileWritter.flush();
     }
 
     public void writterHtml(List<Country>countries) throws IOException {
@@ -90,6 +89,7 @@ public class CountryWritter {
             writterHtml(country);
         }
         fileWritter.write("</table></body>");
+        fileWritter.flush();
     }
 
     private BufferedWriter openWithAppend() throws IOException {

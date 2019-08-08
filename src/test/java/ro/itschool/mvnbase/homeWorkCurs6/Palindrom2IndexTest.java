@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PalindromTest {
+class Palindrom2IndexTest {
 
 
     @Test
@@ -38,7 +38,7 @@ class PalindromTest {
     }
 
     @Test
-    @DisplayName("Palindrom string verification")
+    @DisplayName("Palindrom2Index string verification")
     void stringPalindrom(){
         //SETUP
         Palindrom palindromFunction=new Palindrom();

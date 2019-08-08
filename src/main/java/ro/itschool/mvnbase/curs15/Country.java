@@ -34,6 +34,10 @@ public class Country {
         this.languages = languages;
     }
 
+    public Country(String name) {
+        this(name,null,0,0,null,null,null,null);
+    }
+
 
     public String getName() {
         return name;
